@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Spotify - Web Player</title>
+
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/structure.css">
+</head>
+<body>
+    <div class="container">
+        <header class="container header-bar item-2 center-y">
+            <div class="grow-1">
+                <button class="nav-button"><i class="bi bi-chevron-left"></i></button>
+                <button class="nav-button"><i class="bi bi-chevron-right"></i></button>
+            </div>
+            <div class="container grow-1 just-end">
+                <button class="profile-button container center-y dropbtn" onclick="myFunction()">
+                    <img class="profile-img" src="img/profile.png"/>Rafael Alexandre<i class="container grow-1 center-x bi bi-caret-down-fill"></i>
+                </button>
+
+                <nav id="drop-menu" class="dropdown-content">
+                    <ul>
+                        <li><a href="#">Conta</a><i class="bi bi-box-arrow-up-right"></i></li>
+                        <li><a href="#">Configure seu plano Família</a><i class="bi bi-box-arrow-up-right""></i></li>
+                        <li><a href="#">Perfil</a></li>
+                        <li><a href="#">Suporte</a><i class="bi bi-box-arrow-up-right""></i></li>
+                        <li><a href="#">Baixar</a><i class="bi bi-box-arrow-up-right""></i></li>
+                        <li style="border-bottom: 1px solid var(--card-bk-hover);"><a href="#">Configurações</a></li>
+                        <li><a href="#">Sair</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <aside class="left-side-bar item-1">
+            <nav class="container col">
+                <a href="#"><img src="img/spotify.png"></a>
+                <ul class="side-links">
+                    <li><a href="#"><i class="bi bi-house-door-fill"></i>Início</a></li>
+                    <li><a href="#"><i class="bi bi-search"></i>Buscar</a></li>
+                    <li><a href="#"><i class="bi bi-distribute-horizontal"></i>Sua Biblioteca</a></li>
+                </ul>
+                <ul class="music-links">
+                    <li><a href="#"><i class="bi bi-plus-square-fill"></i>Criar Playlist</a></li>
+                    <li><a href="#"><i class="bi bi-heart-fill"></i>Músicas Curtidas</a></li>
+                </ul>
+                <ul class="playlists">
+                    <li><a href="#">Playlist #01</a></li>
+                    <li><a href="#">Playlist #02</a></li>
+                    <li><a href="#">Playlist #03</a></li>
+                    <li><a href="#">Playlist #04</a></li>
+                    <li><a href="#">Playlist #05</a></li>
+                </ul>
+                <a class="install-link" href="#"><i class="bi bi-arrow-down-circle"></i>Instalar Aplicativo</a>
+            </nav>
+        </aside>
+    </div>
+    <main class="container col">
+        <section class="container">
+            <h1>Boa noite</h1>
+        </section>
+        <section id="playlist-cards" class="container card-gap">
+            <div class="card-horizontal grow-1 center-y">
+                <img class="img-card-horizontal" src="img/uv-grid.jpg"/>
+                <p>Playlist #01</p>
+                <i class="bi bi-play-fill"></i>
+            </div>
+            <div class="card-horizontal grow-1 center-y">
+                <img class="img-card-horizontal" src="img/uv-grid.jpg"/>
+                <p>Playlist #02</p>
+                <i class="bi bi-play-fill"></i>
+            </div>
+            <div class="card-horizontal grow-1 center-y">
+                <img class="img-card-horizontal" src="img/uv-grid.jpg"/>
+                <p>Playlist #03</p>
+                <i class="bi bi-play-fill"></i>
+            </div>
+            <div class="card-horizontal grow-1 center-y">
+                <img class="img-card-horizontal" src="img/uv-grid.jpg"/>
+                <p>Playlist #04</p>
+                <i class="bi bi-play-fill"></i>
+            </div>
+            <div class="card-horizontal grow-1 center-y">
+                <img class="img-card-horizontal" src="img/uv-grid.jpg"/>
+                <p>Playlist #05</p>
+                <i class="bi bi-play-fill"></i>
+            </div>
+            <div class="card-horizontal grow-1 center-y">
+                <img class="img-card-horizontal" src="img/uv-grid.jpg"/>
+                <p>Playlist #06</p>
+                <i class="bi bi-play-fill"></i>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2>Seus programas</h2>
+        </section>
+        <section id="program-cards" class="container card-gap">
+            <div class="card-box grow-1">
+                <img class="img-card-box" src="img/uv-grid.jpg"/>
+                <p>Program #01</p>
+                <p class="gray-text">Artist</p>
+            </div>
+            <div class="card-box grow-1">
+                <img class="img-card-box" src="img/uv-grid.jpg"/>
+                <p>Program #02</p>
+                <p class="gray-text">Artist</p>
+            </div>
+            <div class="card-box grow-1">
+                <img class="img-card-box" src="img/uv-grid.jpg"/>
+                <p>Program #03</p>
+                <p class="gray-text">Artist</p>
+            </div>
+            <div class="card-box grow-1">
+                <img class="img-card-box" src="img/uv-grid.jpg"/>
+                <p>Program #04</p>
+                <p class="gray-text">Artist</p>
+            </div>
+            <div class="card-box grow-1">
+                <img class="img-card-box" src="img/uv-grid.jpg"/>
+                <p>Program #05</p>
+                <p class="gray-text">Artist</p>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2>Tocados recentemente</h2>
+        </section>
+        <section id="recent-cards" class="container card-gap">
+            <div class="card-box grow-1">
+                <img class="img-card-box" src="img/uv-grid.jpg"/>
+                <p>Program #01</p>
+                <p class="gray-text">Artist</p>
+            </div>
+            <div class="card-box grow-1">
+                <img class="img-card-box" src="img/uv-grid.jpg"/>
+                <p>Program #02</p>
+                <p class="gray-text">Artist</p>
+            </div>
+            <div class="card-box grow-1">
+                <img class="img-card-box" src="img/uv-grid.jpg"/>
+                <p>Program #03</p>
+                <p class="gray-text">Artist</p>
+            </div>
+            <div class="card-box grow-1">
+                <img class="img-card-box" src="img/uv-grid.jpg"/>
+                <p>Program #04</p>
+                <p class="gray-text">Artist</p>
+            </div>
+            <div class="card-box grow-1">
+                <img class="img-card-box" src="img/uv-grid.jpg"/>
+                <p>Program #05</p>
+                <p class="gray-text">Artist</p>
+            </div>
+        </section>
+
+        <footer>
+            <section class="container border-bottom grow-1">
+                <div class="grow-1">
+                    <ul>
+                        <li>Empresa</li>
+                        <li><a class="white-sub-hover" href="#">Sobre</a></li>
+                        <li><a class="white-sub-hover" href="#">Empregos</a></li>
+                        <li><a class="white-sub-hover" href="#">For The Record</a></li>
+                    </ul>
+                </div>
+                <div class="grow-1">
+                    <ul>
+                        <li>Comunidades</li>
+                        <li><a class="white-sub-hover" href="#">Para Artistas</a></li>
+                        <li><a class="white-sub-hover" href="#">Desenvolvedores</a></li>
+                        <li><a class="white-sub-hover" href="#">Publicidade</a></li>
+                        <li><a class="white-sub-hover" href="#">Investidores</a></li>
+                        <li><a class="white-sub-hover" href="#">Fornecedores</a></li>
+                    </ul>
+                </div>
+                <div class="grow-2">
+                    <ul>
+                        <li>Links úteis</li>
+                        <li><a class="white-sub-hover" href="#">Suporte</a></li>
+                        <li><a class="white-sub-hover" href="#">Aplicativo móvel grátis</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <button class="social-button"><i class="bi bi-instagram"></i></button>
+                    <button class="social-button"><i class="bi bi-twitter"></i></button>
+                    <button class="social-button"><i class="bi bi-facebook"></i></button>
+                </div>
+            </section>
+            <section class="container grow-1">
+                <a href="#">Legal</a>
+                <a href="#">Centro de Privacidade</a>
+                <a href="#">Politica de Privacidade</a>
+                <a href="#">Cookies</a>
+                <a href="#">Sobre Anúncios</a>
+                <p>&copy 2023 Spotify AB</p>
+            </section>
+        </footer>
+    </main>
+    <nav class="bottom-bar center-y">
+        <div class="container grow-1">
+            <div class="container grow-1">
+                <img class="album-img" src="img/uv-grid.jpg"/>
+                <ul class="center-x col" style="text-align: left; margin: 0 12px;">
+                    <li><a class="white-text white-sub-hover" href="#">Titulo da Música</a></li>
+                    <li><a class="white-sub-hover" href="#">Artista</a></li>
+                </ul>
+                <div class="center-y">
+                    <i js_type="reference-tooltip" js_reference="heart" class="bi bi-heart"></i>
+                    <div class="tooltip" js_reference="heart" role="tooltip">Salvar na sua Biblioteca</div>
+                    <i js_type="reference-tooltip" js_reference="pip" class="bi bi-pip"></i>
+                    <div class="tooltip" js_reference="pip" role="tooltip">Picture in picture</div>
+                </div>
+            </div>
+            <div class="container grow-1 center-x col">
+                <nav class="music-buttons">
+                    <i js_type="reference-tooltip" class="bi bi-shuffle"></i>
+                    <div class="tooltip" js_reference="shuffle" role="tooltip">Ativar a ordem aleatória</div>
+                    <i js_type="reference-tooltip" class="bi bi-skip-start-fill"></i>
+                    <div class="tooltip" js_reference="start" role="tooltip">Voltar</div>
+                    <i js_type="reference-tooltip" class="bi bi-play-circle-fill"></i>
+                    <div class="tooltip" js_reference="play" role="tooltip">Play</div>
+                    <i js_type="reference-tooltip" class="bi bi-skip-end-fill"></i>
+                    <div class="tooltip" js_reference="skip" role="tooltip">Avançar</div>
+                    <i js_type="reference-tooltip" class="bi bi-repeat"></i>
+                    <div class="tooltip" js_reference="repeat" role="tooltip">Repetir</div>
+                </nav>
+                <div style="font-size: 10px;">
+                    01:52<input style="width: 416px;" type="range" value="70" min="0" max="100" id="range" oninput="rangenumber.value=value"/>05:44
+                </div>
+            </div>
+            <div class="container grow-1 just-end">
+                <div class="center-y">
+                    <i js_type="reference-tooltip" class="bi bi-music-note-list"></i>
+                    <div class="tooltip" js_reference="skip" role="tooltip">Letra</div>
+                    <i js_type="reference-tooltip" class="bi bi-view-list"></i>
+                    <div class="tooltip" js_reference="skip" role="tooltip">Fila</div>
+                    <i js_type="reference-tooltip" class="bi bi-pc-display"></i>
+                    <div class="tooltip" js_reference="skip" role="tooltip">Conectar a um dispositivo</div>
+                    <i js_type="reference-tooltip" class="bi bi-volume-down"></i>
+                    <div class="tooltip" js_reference="skip" role="tooltip">Volume</div>
+                    <input style="width: 96px;" type="range" value="70" min="0" max="100" id="range" oninput="rangenumber.value=value"/>
+                    <i js_type="reference-tooltip" class="bi bi-arrows-angle-expand"></i>
+                    <div class="tooltip" js_reference="skip" role="tooltip">Tela Cheia</div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <script src="js/range-input.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/dropdown.js"></script>
+</body>
+</html>
